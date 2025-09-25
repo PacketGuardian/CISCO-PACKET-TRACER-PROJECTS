@@ -26,7 +26,7 @@ and **Fortinet Certified Fundamentals in Cybersecurity**.
    <p> d. VoIP Telephony.</p>
 
 ### 📂 Featured Projects  
-   <p>  A.) 📞 Cisco VoIP Telephony Lab – Day 1 </p>
+   <p>  A.) ##📞 Cisco VoIP Telephony Lab – Day 1</p>
 
    <p> This project is part of my 3-Day VoIP Configuration Journey, where I build and document a working VoIP network using Cisco Packet Tracer. The goal is to demonstrate      how Voice over IP (VoIP) works, and how IP phones can be configured to communicate within the same VLAN. </p>
 
