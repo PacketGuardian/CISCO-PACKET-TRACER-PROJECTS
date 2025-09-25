@@ -30,11 +30,11 @@ and **Fortinet Certified Fundamentals in Cybersecurity**.
 
    <p> This project is part of my 3-Day VoIP Configuration Journey, where I build and document a working VoIP network using Cisco Packet Tracer. The goal is to demonstrate      how Voice over IP (VoIP) works, and how IP phones can be configured to communicate within the same VLAN. </p>
 
-🔎 What is VoIP?
+**🔎 What is VoIP?**
 
 Voice over Internet Protocol (VoIP) allows voice communication to travel over IP networks instead of traditional phone lines. With VoIP, IP Phones act like computers, connecting to switches and routers to make calls.
 
-🛠️ Lab Topology
+**🛠️ Lab Topology**
 
 Router: Cisco 2811 (configured as DHCP server + Call Manager Express)
 
@@ -53,21 +53,21 @@ IP Phone 3 → 1003
 IP Phone 4 → 1004
 
 ⚙️ Configurations
-✅ On Router (2811)
+**✅ On Router (2811)**
 
-DHCP with Option 150 (for TFTP server / CME)
+DHCP with Option 150 (for / CME)
 
 Sub-interface Fa0/0.10 for VLAN 10 (Voice VLAN)
 
 Telephony-service (defined extensions, auto-assign to phones)
 
-✅ On Switch (2960)
+**✅ On Switch (2960)**
 
 Access Ports set to Voice VLAN 10 (for IP phones)
 
 Trunk Port to Router (for inter-VLAN communication)
 
-📡 Protocols & Features Used
+**📡 Protocols & Features Used**
 
 DHCP → Assigns IPs to phones automatically
 
@@ -77,7 +77,7 @@ VLAN 10 → Dedicated voice VLAN for call quality
 
 CME (Call Manager Express) → Handles call setup & signaling
 
-📞 Results
+**📞 Results**
 
 After completing the configuration:
 
@@ -87,7 +87,7 @@ Phones were registered with the router.
 
 I could dial extensions (1001–1004) between phones and establish calls successfully.
 
-🚀 Next Steps (Day 2 & Day 3)
+**🚀 Next Steps (Day 2 & Day 3)**
 
 Explore call flow in more detail
 
