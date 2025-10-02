@@ -96,3 +96,60 @@ Add PCs alongside phones to test data + voice VLANs
 Troubleshoot call drops and QoS (Quality of Service) </p>
 
 &nbsp;
+
+<p> <b></b>VoIP Telephony – Dial Peering Configuration (Day 3)</p></b> 
+📌 Project Overview
+
+This project is part of my VoIP Telephony Lab Series, built using Cisco Packet Tracer. On Day 3, I focused on Dial Peering, which enables seamless communication between two remote branches — Accra and Kumasi — using internal VoIP extensions.
+
+Accra Branch Extensions: 1001 – 1003
+
+Kumasi Branch Extensions: 1004 – 1006
+
+Dial Peering allows IP Phones in one branch to call phones in another without relying on PSTN lines, reducing costs and improving scalability.
+
+🖼️ Topology
+
+Routers: Cisco 2811 (R1 & R2)
+
+Switches: Cisco 3650 Multilayer Switches
+
+IP Phones: Cisco 7960 Series
+
+WAN Link: 10.0.0.0/30 connecting R1 ↔ R2
+
+Routing Protocol: OSPF for branch interconnectivity
+
+Voice VLANs:
+
+VLAN 10 & VLAN 20 (Accra)
+
+VLAN 30 & VLAN 40 (Kumasi)
+
+⚙️ Configurations
+🔹 R1 (Accra) Highlights
+dial-peer voice 10 voip
+ destination-pattern 1...
+ session target ipv4:10.0.0.2
+
+🔹 R2 (Kumasi) Highlights
+dial-peer voice 10 voip
+ destination-pattern 1...
+ session target ipv4:10.0.0.1
+
+
+Each site is configured with telephony-service for IP Phones, DHCP pools with option 150, and OSPF for routing.
+
+🌍 Real-Life Analogy
+
+Think of Dial Peering as building a direct road between two towns (Accra ↔ Kumasi). Without this “road,” communication would need to pass through expensive, external paths (PSTN). With Dial Peering, users can dial short internal extensions as if they are in the same office.
+
+✅ Key Benefits
+
+Cost Savings – Reduces dependency on PSTN lines
+
+Scalability – Easy integration of new branches into the VoIP system
+
+Flexibility – Internal extension dialing across remote sites
+
+Efficiency – Faster, seamless communication between teams
