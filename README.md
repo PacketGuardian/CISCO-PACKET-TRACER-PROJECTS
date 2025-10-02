@@ -97,7 +97,7 @@ Troubleshoot call drops and QoS (Quality of Service) </p>
 
 &nbsp;
 
-<p> <b></b>VoIP Telephony – Dial Peering Configuration (Day 3)</p></b> 
+<p> <b></b>VoIP Telephony – Dial Peering Configuration (Day 3)##</p></b> 
 📌 Project Overview
 
 This project is part of my VoIP Telephony Lab Series, built using Cisco Packet Tracer. On Day 3, I focused on Dial Peering, which enables seamless communication between two remote branches — Accra and Kumasi — using internal VoIP extensions.
