@@ -95,4 +95,12 @@ Add PCs alongside phones to test data + voice VLANs
 
 Troubleshoot call drops and QoS (Quality of Service) </p>
 
-   
+&nbsp;
+
+   <p>  C.) **📞 **🔎 Dial Peering Telephony Lab Day -3 </p>
+
+   <p>  </p>
+
+**🔎 What is Dial Peering?**
+
+Voice over Internet Protocol (VoIP) allows voice communication to travel over IP networks instead of traditional phone lines. With VoIP, IP Phones act like computers, connecting to switches and routers to make calls.
